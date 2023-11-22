@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт студета</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
+    <script src="script.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="navigation-panel">
+            <ul>
+                <li>Навигационная панель</li>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="portfolio.html">Портфолио</a></li>
+                <li><a href="album.html">Альбом</a></li>
+                <li><a href="test.html">Тест</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="header">
+        <h1 style="color: #651689;">Тест для участников группы ПО2210</h1>
+    </div>
+    <nav>
+        <div class="navigation-menu">
+            <ul>
+                <li><a href="#1q" >1 вопрос</a></li>
+                <li><a href="#2q" >2 вопрос</a></li>
+                <li><a href="#3q" >3 вопрос</a></li>
+                <li><a href="#4q" >4 вопрос</a></li>
+                <li><a href="#5q" >5 вопрос</a></li>
+                <li><a href="#6q" >6 вопрос</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="content">
+        <div class="borderi">
+            <section id="home">
+                <h2 style="color: #651689;">Добро пожаловать!</h2>
+                <p>Этот тест создан для участников группы ПО2210</p>
+            </div>
+            </section>
+            <br><br>
+<div class="borderi">
+            <section id="test">
+                <h2 style="color: #651689;">Тест</h2>
+                <p>Ответьте на вопросы:</p>
+                
+                <form>
+                    <h1 id="1q" style="color: #651689;">1. Чьё лицо вывели на взломанном проекторе?</h1>
+                    <label><input type="radio" name="question1" value="answer1"> Нуралы</label><br><br>
+                    <label><input type="radio" name="question1" value="answer2"> Айдына</label><br><br>
+                    <label><input type="radio" name="question1" value="answer3"> Антона</label>
+                    
+                    <h1 id="2q" style="color: #651689;">2. В каком кабинете мы учились весь первый курс?</h1>
+                    <label><input type="radio" name="question2" value="answer1"> 228</label><br><br>
+                    <label><input type="radio" name="question2" value="answer2"> 241</label><br><br>
+                    <label><input type="radio" name="question2" value="answer3"> 225</label>
+
+                    <h1 id="3q" style="color: #651689;">3. Чьё имя постоянно называет Адиль?</h1>
+                    <label><input type="radio" name="question3" value="answer1"> Алишер</label><br><br>
+                    <label><input type="radio" name="question3" value="answer2"> Адиль</label><br><br>
+                    <label><input type="radio" name="question3" value="answer3"> Тагир</label>
+
+                    <h1 id="4q" style="color: #651689;">4. Айдар должен соблюдать...</h1>
+                    <label><input type="radio" name="question4" value="answer1"> Субординацию</label><br><br>
+                    <label><input type="radio" name="question4" value="answer2"> Вежливость</label><br><br>
+                    <label><input type="radio" name="question4" value="answer3"> Уважение</label>
+
+                    
+                    <h1 id="5q" style="color: #651689;">5. Кто был первым старостой?</h1>
+                    <label><input type="radio" name="question5" value="answer1"> Диана</label><br><br>
+                    <label><input type="radio" name="question5" value="answer2"> Валерия</label><br><br>
+                    <label><input type="radio" name="question5" value="answer3"> Тагир</label>
+
+                    <h1 id="6q" style="color: #651689;">6. Тагир?</h1>
+                    <label><input type="radio" name="question6" value="answer1"> Тагир.</label><br><br>
+                    <label><input type="radio" name="question6" value="answer2"> Тагир!</label><br><br>
+                    <label><input type="radio" name="question6" value="answer3"> Тагир?</label>
+
+                    <br>
+                    <button type="button" onclick="showResults()" class="portfolio-button">Завершить тест</button>
+                </form>
+            </section>
+        </div>
+        </div>
+    </div>
+    <fieldset class="footer"> 
+        <div class="message" onclick="toggleForm()">Нажмите для открытия формы обратной связи</div>
+        <fieldset class="footer" id="feedbackForm" style="display: none;"> 
+            <form action="//example.com" id="connection">
+                <legend>Обратная связь:</legend><br>
+                Имя: <br>
+                <input type="text" name="name"><br> 
+                <br> 
+                Email: <br>
+                <input type="email" name="email"><br> 
+                <br> 
+                Сообщение: <br>
+                <textarea class="messagee"  name="comment"></textarea><br>
+                <br>
+                <button type="button" class="submit" onclick="submitForm()">Отправить</button>
+            </form>
+        </fieldset>
+    
+        <footer class="footer">
+            <img src="https://i.imgur.com/6SPzinK.jpg" alt=""> 
+            <p>Email: erizoned@gmail.com, Номер телефона: +7(775)140-76-68</p>
+            <div class="social-media">
+                <a href="https://vk.com/erizone" target="_blank" rel="noopener noreferrer">ВКонтакте</a>
+                <a href="https://github.com/Erizoned" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://steamcommunity.com/id/erizone/" target="_blank" rel="noopener noreferrer">Steam</a>
+            </div>
+            <p>© 2023 Anton Romanov inc. Все права защищены.</p>
+        </footer>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт студента</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
+    <script src="script.js"></script>
+</head>
+<body>
+        <nav>
+            <div class="navigation-panel">
+                <ul>
+                    <li>Навигационная панель</li>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="portfolio.html" >Портфолио</a></li>
+                    <li><a href="album.html">Альбом</a></li>
+                    <li><a href="test.html">Тест</a></li>
+                </ul>
+            </div>
+        </nav>
+<div class="header">
+    
+    <h1 style="color: #651689;"> Сайт Студента </h1>
+</div>  
+<nav>
+    <div class="navigation-menu">
+        <ul>
+            <li><a href="#education" >Образование</a></li>
+            <li><a href="#achievments" >Достижения</a></li>
+            <li><a href="#video" >Видео</a></li>
+            <li><a href="#connection">Обратная связь</a></li>
+        </ul>
+    </div>
+</nav>
+<div class="cont">
+    <div class="side1"> 
+    </div>
+    <div class="main">
+        
+        <div class="borderi">
+            <h1>Романов Антон</h1>
+        </div>  
+        <br>  
+        <a href="https://imgur.com/6SPzinK"><img src="https://i.imgur.com/6SPzinK.jpg" title="source: imgur.com"  style="height: 350px; border-radius: 15px;"></a><br>  
+        <div class="borderi">
+            <h2>Студент Astana IT College, 17 лет. </h2>
+        </div>    
+        <br> 
+        <br> 
+        <center> 
+        <table border="1" style="background-color: black;"> 
+            <tr> 
+                <th  id="education">Учебные заведения</th> 
+                <th>Годы обучения</th> 
+                <th>Образование</th> 
+            </tr> 
+            <tr> 
+                <td>Школа-Гимназия №3</td> 
+                <td>2013-2014</td> 
+                <td>Младшая школа</td> 
+            </tr> 
+            <tr> 
+                <td>Школа-Гимназия №65</td> 
+                <td>2014-2018</td> 
+                <td>Средняя школа</td> 
+            </tr> 
+            <tr> 
+                <td>Школа-Гимназия №30</td> 
+                <td>2018-2022</td> 
+                <td>Старшая школа</td> 
+            </tr> 
+            <tr> 
+                <td>Astana IT College</td> 
+                <td>2022-2025</td> 
+                <td>Средне-специальное</td> 
+            </tr> 
+        </table> 
+        <br>
+        <br>
+        </center> 
+        <div class="borderi2">
+        <h2 id="achievments">Достижения</h2> 
+        <ul> 
+            <li>Занимался карате 3 года</li> 
+            <li>Занимался и продолжаю заниматься в тренажёрном зале</li> 
+            <li>Играю на электрогитаре</li>
+            <ul>В одиночку путешествовал по Европе
+                <li>Берлин(Германия)</li>
+                <li>Прага(Чехия)</li>
+                <li>Вена(Австрия)</li>
+            </ul> 
+            <br>
+        </ul>
+        </div>
+        <br>
+        <br>
+        <div class="borderi">
+        <video controls id="video">
+            <source href="https://imgur.com/kGTz8oN" src="https://i.imgur.com/kGTz8oN.mp4" title="source: imgur.com" type="video/mp4">
+        </video>
+    </div>
+    </div>
+    <div class="side2">
+    </div>
+</div>
+<fieldset class="footer"> 
+    <div class="message" onclick="toggleForm()">Нажмите для открытия формы обратной связи</div>
+    <fieldset class="footer" id="feedbackForm" style="display: none;"> 
+        <form action="//example.com" id="connection">
+            <legend>Обратная связь:</legend><br>
+            Имя: <br>
+            <input type="text" name="name" required><br> 
+            <br> 
+            Email: <br>
+            <input type="email" name="email" required><br> 
+            <br> 
+            Сообщение: <br>
+            <textarea class="messagee"  name="comment" required></textarea><br>
+            <br>
+            <input type="submit" value="Отправить" class="submit">
+        </form>
+    </fieldset>
+    <div id="error-container"></div>
+    <footer class="footer">
+        <img src="https://i.imgur.com/6SPzinK.jpg" alt=""> 
+        <p>Email: erizoned@gmail.com, Номер телефона: +7(775)140-76-68</p>
+        <div class="social-media">
+            <a href="https://vk.com/erizone" target="_blank" rel="noopener noreferrer">ВКонтакте</a>
+            <a href="https://github.com/Erizoned" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://steamcommunity.com/id/erizone/" target="_blank" rel="noopener noreferrer">Steam</a>
+        </div>
+        <p>© 2023 Anton Romanov inc. Все права защищены.</p>
+    </footer>
+</body>
+</html>
